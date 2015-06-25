@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BKQuestion.h"
 
 @interface BKTopic : NSObject
 
 - (id)initWithName:(NSString*) newName tag:(NSString*) tag;
 - (NSArray*) recentQuestions;
+- (void) addQuestion:(BKQuestion*) question;
 @property (strong, nonatomic) NSString* name;
 @property (strong, nonatomic) NSString* tag;
 @end

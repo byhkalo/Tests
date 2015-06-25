@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "BKTopic.h"
+#import "BKQuestion.h"
 
 @interface TopicTest : XCTestCase {
      BKTopic* topic;
@@ -42,5 +43,15 @@
 
 - (void)testForAListOfQestions {
     XCTAssertTrue([[topic recentQuestions] isKindOfClass:[NSArray class]], @"Topic should provide a list of recent questions");
+}
+
+- (void)testForInitiallyEmptyQyestionList {
+    XCTAssertEqual([[topic recentQuestions] count], (NSInteger)0, @"No questions addet yet, it must be zero");
+}
+
+- (void)tearForAddingAQuestionToTheList {
+    BKQuestion* question = [[BKQuestion alloc]init];
+    [topic addQuestion: question];
+    XCTAssertEqual([[topic recentQuestions]count], (NSInteger)1,@"Add one question, count should be one");
 }
 @end

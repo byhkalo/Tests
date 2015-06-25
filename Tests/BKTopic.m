@@ -8,18 +8,25 @@
 
 #import "BKTopic.h"
 
-@implementation BKTopic
+@implementation BKTopic {
+    NSArray* questions;
+}
 
 - (id)initWithName:(NSString*) newName tag:(NSString *)tag {
     self = [super init];
     if (self) {
         _name = newName;
         _tag = tag;
+        questions = [[NSArray alloc]init];
     }
     return self;
 }
 
+- (void) addQuestion:(BKQuestion*) question {
+    questions = [questions arrayByAddingObject:question];
+}
+
 - (NSArray*) recentQuestions {
-    return [NSArray array];
+    return questions;
 }
 @end
