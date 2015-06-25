@@ -14,11 +14,37 @@
 		2A76D6781B3C2CF5008CF2DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A76D6761B3C2CF5008CF2DD /* Main.storyboard */; };
 		2A76D67A1B3C2CF5008CF2DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A76D6791B3C2CF5008CF2DD /* Images.xcassets */; };
 		2A76D67D1B3C2CF5008CF2DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A76D67B1B3C2CF5008CF2DD /* LaunchScreen.xib */; };
-		2A76D6891B3C2CF5008CF2DD /* TestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A76D6881B3C2CF5008CF2DD /* TestsTests.m */; };
+		2A76D69B1B3C2F13008CF2DD /* TopicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A76D69A1B3C2F13008CF2DD /* TopicTest.m */; };
+		2A76D6A61B3C32A0008CF2DD /* BKTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A76D6A51B3C32A0008CF2DD /* BKTopic.m */; };
+		2A76D6A91B3C3BE2008CF2DD /* BKQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A76D6A81B3C3BE2008CF2DD /* BKQuestion.m */; };
+		2A76D6B31B3C403D008CF2DD /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A76D6B21B3C403D008CF2DD /* QuestionTests.m */; };
+		2A76D6C21B3C4706008CF2DD /* PersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A76D6C11B3C4706008CF2DD /* PersonTests.m */; };
+		2A76D6CA1B3C4726008CF2DD /* BKPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A76D6C91B3C4726008CF2DD /* BKPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2A76D6831B3C2CF5008CF2DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A76D65E1B3C2CF5008CF2DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A76D6651B3C2CF5008CF2DD;
+			remoteInfo = Tests;
+		};
+		2A76D69C1B3C2F13008CF2DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A76D65E1B3C2CF5008CF2DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A76D6651B3C2CF5008CF2DD;
+			remoteInfo = Tests;
+		};
+		2A76D6B41B3C403D008CF2DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A76D65E1B3C2CF5008CF2DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A76D6651B3C2CF5008CF2DD;
+			remoteInfo = Tests;
+		};
+		2A76D6C31B3C4706008CF2DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A76D65E1B3C2CF5008CF2DD /* Project object */;
 			proxyType = 1;
@@ -41,8 +67,21 @@
 		2A76D6791B3C2CF5008CF2DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2A76D67C1B3C2CF5008CF2DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2A76D6821B3C2CF5008CF2DD /* TestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A76D6871B3C2CF5008CF2DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A76D6881B3C2CF5008CF2DD /* TestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestsTests.m; sourceTree = "<group>"; };
+		2A76D6961B3C2F13008CF2DD /* TopicTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopicTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A76D6991B3C2F13008CF2DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A76D69A1B3C2F13008CF2DD /* TopicTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopicTest.m; sourceTree = "<group>"; };
+		2A76D6A41B3C32A0008CF2DD /* BKTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKTopic.h; sourceTree = "<group>"; };
+		2A76D6A51B3C32A0008CF2DD /* BKTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKTopic.m; sourceTree = "<group>"; };
+		2A76D6A71B3C3BE2008CF2DD /* BKQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKQuestion.h; sourceTree = "<group>"; };
+		2A76D6A81B3C3BE2008CF2DD /* BKQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKQuestion.m; sourceTree = "<group>"; };
+		2A76D6AE1B3C403D008CF2DD /* QuestionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A76D6B11B3C403D008CF2DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A76D6B21B3C403D008CF2DD /* QuestionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
+		2A76D6BD1B3C4706008CF2DD /* PersonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A76D6C01B3C4706008CF2DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A76D6C11B3C4706008CF2DD /* PersonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonTests.m; sourceTree = "<group>"; };
+		2A76D6C81B3C4726008CF2DD /* BKPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKPerson.h; sourceTree = "<group>"; };
+		2A76D6C91B3C4726008CF2DD /* BKPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +99,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A76D6931B3C2F13008CF2DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A76D6AB1B3C403D008CF2DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A76D6BA1B3C4706008CF2DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,7 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				2A76D6681B3C2CF5008CF2DD /* Tests */,
-				2A76D6851B3C2CF5008CF2DD /* TestsTests */,
+				2A76D6971B3C2F13008CF2DD /* TopicTest */,
+				2A76D6AF1B3C403D008CF2DD /* QuestionTests */,
+				2A76D6BE1B3C4706008CF2DD /* PersonTests */,
 				2A76D6671B3C2CF5008CF2DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +139,9 @@
 			children = (
 				2A76D6661B3C2CF5008CF2DD /* Tests.app */,
 				2A76D6821B3C2CF5008CF2DD /* TestsTests.xctest */,
+				2A76D6961B3C2F13008CF2DD /* TopicTest.xctest */,
+				2A76D6AE1B3C403D008CF2DD /* QuestionTests.xctest */,
+				2A76D6BD1B3C4706008CF2DD /* PersonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +155,12 @@
 				2A76D6711B3C2CF5008CF2DD /* MasterViewController.m */,
 				2A76D6731B3C2CF5008CF2DD /* DetailViewController.h */,
 				2A76D6741B3C2CF5008CF2DD /* DetailViewController.m */,
+				2A76D6A41B3C32A0008CF2DD /* BKTopic.h */,
+				2A76D6A51B3C32A0008CF2DD /* BKTopic.m */,
+				2A76D6A71B3C3BE2008CF2DD /* BKQuestion.h */,
+				2A76D6A81B3C3BE2008CF2DD /* BKQuestion.m */,
+				2A76D6C81B3C4726008CF2DD /* BKPerson.h */,
+				2A76D6C91B3C4726008CF2DD /* BKPerson.m */,
 				2A76D6761B3C2CF5008CF2DD /* Main.storyboard */,
 				2A76D6791B3C2CF5008CF2DD /* Images.xcassets */,
 				2A76D67B1B3C2CF5008CF2DD /* LaunchScreen.xib */,
@@ -107,19 +178,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2A76D6851B3C2CF5008CF2DD /* TestsTests */ = {
+		2A76D6971B3C2F13008CF2DD /* TopicTest */ = {
 			isa = PBXGroup;
 			children = (
-				2A76D6881B3C2CF5008CF2DD /* TestsTests.m */,
-				2A76D6861B3C2CF5008CF2DD /* Supporting Files */,
+				2A76D69A1B3C2F13008CF2DD /* TopicTest.m */,
+				2A76D6981B3C2F13008CF2DD /* Supporting Files */,
 			);
-			path = TestsTests;
+			path = TopicTest;
 			sourceTree = "<group>";
 		};
-		2A76D6861B3C2CF5008CF2DD /* Supporting Files */ = {
+		2A76D6981B3C2F13008CF2DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2A76D6871B3C2CF5008CF2DD /* Info.plist */,
+				2A76D6991B3C2F13008CF2DD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A76D6AF1B3C403D008CF2DD /* QuestionTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A76D6B21B3C403D008CF2DD /* QuestionTests.m */,
+				2A76D6B01B3C403D008CF2DD /* Supporting Files */,
+			);
+			path = QuestionTests;
+			sourceTree = "<group>";
+		};
+		2A76D6B01B3C403D008CF2DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A76D6B11B3C403D008CF2DD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A76D6BE1B3C4706008CF2DD /* PersonTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A76D6C11B3C4706008CF2DD /* PersonTests.m */,
+				2A76D6BF1B3C4706008CF2DD /* Supporting Files */,
+			);
+			path = PersonTests;
+			sourceTree = "<group>";
+		};
+		2A76D6BF1B3C4706008CF2DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A76D6C01B3C4706008CF2DD /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -162,6 +267,60 @@
 			productReference = 2A76D6821B3C2CF5008CF2DD /* TestsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2A76D6951B3C2F13008CF2DD /* TopicTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A76D69E1B3C2F13008CF2DD /* Build configuration list for PBXNativeTarget "TopicTest" */;
+			buildPhases = (
+				2A76D6921B3C2F13008CF2DD /* Sources */,
+				2A76D6931B3C2F13008CF2DD /* Frameworks */,
+				2A76D6941B3C2F13008CF2DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A76D69D1B3C2F13008CF2DD /* PBXTargetDependency */,
+			);
+			name = TopicTest;
+			productName = TopicTest;
+			productReference = 2A76D6961B3C2F13008CF2DD /* TopicTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A76D6AD1B3C403D008CF2DD /* QuestionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A76D6B61B3C403D008CF2DD /* Build configuration list for PBXNativeTarget "QuestionTests" */;
+			buildPhases = (
+				2A76D6AA1B3C403D008CF2DD /* Sources */,
+				2A76D6AB1B3C403D008CF2DD /* Frameworks */,
+				2A76D6AC1B3C403D008CF2DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A76D6B51B3C403D008CF2DD /* PBXTargetDependency */,
+			);
+			name = QuestionTests;
+			productName = QuestionTests;
+			productReference = 2A76D6AE1B3C403D008CF2DD /* QuestionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A76D6BC1B3C4706008CF2DD /* PersonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A76D6C51B3C4706008CF2DD /* Build configuration list for PBXNativeTarget "PersonTests" */;
+			buildPhases = (
+				2A76D6B91B3C4706008CF2DD /* Sources */,
+				2A76D6BA1B3C4706008CF2DD /* Frameworks */,
+				2A76D6BB1B3C4706008CF2DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A76D6C41B3C4706008CF2DD /* PBXTargetDependency */,
+			);
+			name = PersonTests;
+			productName = PersonTests;
+			productReference = 2A76D6BD1B3C4706008CF2DD /* PersonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,6 +334,18 @@
 						CreatedOnToolsVersion = 6.3.2;
 					};
 					2A76D6811B3C2CF5008CF2DD = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 2A76D6651B3C2CF5008CF2DD;
+					};
+					2A76D6951B3C2F13008CF2DD = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 2A76D6651B3C2CF5008CF2DD;
+					};
+					2A76D6AD1B3C403D008CF2DD = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 2A76D6651B3C2CF5008CF2DD;
+					};
+					2A76D6BC1B3C4706008CF2DD = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 2A76D6651B3C2CF5008CF2DD;
 					};
@@ -195,6 +366,9 @@
 			targets = (
 				2A76D6651B3C2CF5008CF2DD /* Tests */,
 				2A76D6811B3C2CF5008CF2DD /* TestsTests */,
+				2A76D6951B3C2F13008CF2DD /* TopicTest */,
+				2A76D6AD1B3C403D008CF2DD /* QuestionTests */,
+				2A76D6BC1B3C4706008CF2DD /* PersonTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +391,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A76D6941B3C2F13008CF2DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A76D6AC1B3C403D008CF2DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A76D6BB1B3C4706008CF2DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,8 +420,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A76D66F1B3C2CF5008CF2DD /* AppDelegate.m in Sources */,
+				2A76D6A61B3C32A0008CF2DD /* BKTopic.m in Sources */,
+				2A76D6CA1B3C4726008CF2DD /* BKPerson.m in Sources */,
 				2A76D6721B3C2CF5008CF2DD /* MasterViewController.m in Sources */,
 				2A76D66C1B3C2CF5008CF2DD /* main.m in Sources */,
+				2A76D6A91B3C3BE2008CF2DD /* BKQuestion.m in Sources */,
 				2A76D6751B3C2CF5008CF2DD /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,7 +433,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A76D6891B3C2CF5008CF2DD /* TestsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A76D6921B3C2F13008CF2DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A76D69B1B3C2F13008CF2DD /* TopicTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A76D6AA1B3C403D008CF2DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A76D6B31B3C403D008CF2DD /* QuestionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A76D6B91B3C4706008CF2DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A76D6C21B3C4706008CF2DD /* PersonTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +467,21 @@
 			isa = PBXTargetDependency;
 			target = 2A76D6651B3C2CF5008CF2DD /* Tests */;
 			targetProxy = 2A76D6831B3C2CF5008CF2DD /* PBXContainerItemProxy */;
+		};
+		2A76D69D1B3C2F13008CF2DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A76D6651B3C2CF5008CF2DD /* Tests */;
+			targetProxy = 2A76D69C1B3C2F13008CF2DD /* PBXContainerItemProxy */;
+		};
+		2A76D6B51B3C403D008CF2DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A76D6651B3C2CF5008CF2DD /* Tests */;
+			targetProxy = 2A76D6B41B3C403D008CF2DD /* PBXContainerItemProxy */;
+		};
+		2A76D6C41B3C4706008CF2DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A76D6651B3C2CF5008CF2DD /* Tests */;
+			targetProxy = 2A76D6C31B3C4706008CF2DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -403,6 +639,108 @@
 			};
 			name = Release;
 		};
+		2A76D69F1B3C2F13008CF2DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TopicTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tests.app/Tests";
+			};
+			name = Debug;
+		};
+		2A76D6A01B3C2F13008CF2DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TopicTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tests.app/Tests";
+			};
+			name = Release;
+		};
+		2A76D6B71B3C403D008CF2DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QuestionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tests.app/Tests";
+			};
+			name = Debug;
+		};
+		2A76D6B81B3C403D008CF2DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QuestionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tests.app/Tests";
+			};
+			name = Release;
+		};
+		2A76D6C61B3C4706008CF2DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PersonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tests.app/Tests";
+			};
+			name = Debug;
+		};
+		2A76D6C71B3C4706008CF2DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PersonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tests.app/Tests";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -428,6 +766,30 @@
 			buildConfigurations = (
 				2A76D6901B3C2CF5008CF2DD /* Debug */,
 				2A76D6911B3C2CF5008CF2DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2A76D69E1B3C2F13008CF2DD /* Build configuration list for PBXNativeTarget "TopicTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A76D69F1B3C2F13008CF2DD /* Debug */,
+				2A76D6A01B3C2F13008CF2DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2A76D6B61B3C403D008CF2DD /* Build configuration list for PBXNativeTarget "QuestionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A76D6B71B3C403D008CF2DD /* Debug */,
+				2A76D6B81B3C403D008CF2DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2A76D6C51B3C4706008CF2DD /* Build configuration list for PBXNativeTarget "PersonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A76D6C61B3C4706008CF2DD /* Debug */,
+				2A76D6C71B3C4706008CF2DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
