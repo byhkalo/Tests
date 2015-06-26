@@ -22,7 +22,12 @@
     return self;
 }
 
+- (void) addQuestion:(BKQuestion*) question {
+    questions = [questions arrayByAddingObject:question];
+}
+
 - (NSArray*) recentQuestions {
+<<<<<<< HEAD
     return [self sortedArrayLatestFirst:questions];
 }
 
@@ -32,6 +37,9 @@
         BKQuestion* q2 = obj2;
         return [q2.date compare:q1.date];
     }];
+=======
+    return questions;
+>>>>>>> 5dda2d307976c79acf01edde390cc57b686f6972
 }
 
 - (void) addQuestion:(BKQuestion*) question {
