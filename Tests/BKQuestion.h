@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BKAnswer.h"
 
 @interface BKQuestion : NSObject
 
 @property (strong, nonatomic) NSDate* date;
 @property (strong, nonatomic) NSString* title;
 @property (assign, nonatomic) NSInteger score;
+@property (strong, nonatomic) NSArray* answers;
+
+- (void) addAnswer:(BKAnswer*) answer;
 
 @end
