@@ -20,13 +20,15 @@
 		2AE459C01B3D5C480040678E /* BKAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE459BF1B3D5C480040678E /* BKAnswer.m */; };
 		2AE459D31B3D81EE0040678E /* BKStackOverflowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE459D21B3D81EE0040678E /* BKStackOverflowManager.m */; };
 		2AE459DC1B3D85970040678E /* BKMockStackOverflowManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE459DB1B3D85970040678E /* BKMockStackOverflowManagerDelegate.m */; };
-		2AE459E91B3D8CBA0040678E /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE459DE1B3D8CBA0040678E /* libOCMock.a */; };
 		2AE45A101B3D8FCD0040678E /* AnswerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A0A1B3D8FCD0040678E /* AnswerTests.m */; };
 		2AE45A111B3D8FCD0040678E /* PersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A0B1B3D8FCD0040678E /* PersonTests.m */; };
 		2AE45A121B3D8FCD0040678E /* QuestionCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A0C1B3D8FCD0040678E /* QuestionCreationTests.m */; };
 		2AE45A131B3D8FCD0040678E /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A0D1B3D8FCD0040678E /* QuestionTests.m */; };
 		2AE45A141B3D8FCD0040678E /* TestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A0E1B3D8FCD0040678E /* TestsTests.m */; };
 		2AE45A151B3D8FCD0040678E /* TopicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A0F1B3D8FCD0040678E /* TopicTest.m */; };
+		2AE45A181B3D98990040678E /* BKStackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A171B3D98990040678E /* BKStackOverflowCommunicator.m */; };
+		2AE45A1B1B3D98D70040678E /* BKMockStackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A1A1B3D98D70040678E /* BKMockStackOverflowCommunicator.m */; };
+		2AE45A1D1B3D9B540040678E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE45A1C1B3D9B540040678E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,11 @@
 		2AE45A0D1B3D8FCD0040678E /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
 		2AE45A0E1B3D8FCD0040678E /* TestsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestsTests.m; sourceTree = "<group>"; };
 		2AE45A0F1B3D8FCD0040678E /* TopicTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTest.m; sourceTree = "<group>"; };
+		2AE45A161B3D98990040678E /* BKStackOverflowCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKStackOverflowCommunicator.h; sourceTree = "<group>"; };
+		2AE45A171B3D98990040678E /* BKStackOverflowCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKStackOverflowCommunicator.m; sourceTree = "<group>"; };
+		2AE45A191B3D98D70040678E /* BKMockStackOverflowCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMockStackOverflowCommunicator.h; sourceTree = "<group>"; };
+		2AE45A1A1B3D98D70040678E /* BKMockStackOverflowCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKMockStackOverflowCommunicator.m; sourceTree = "<group>"; };
+		2AE45A1C1B3D9B540040678E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE459E91B3D8CBA0040678E /* libOCMock.a in Frameworks */,
+				2AE45A1D1B3D9B540040678E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +113,7 @@
 		2A76D65D1B3C2CF5008CF2DD = {
 			isa = PBXGroup;
 			children = (
+				2AE45A1C1B3D9B540040678E /* Foundation.framework */,
 				2A76D6681B3C2CF5008CF2DD /* Tests */,
 				2A76D6671B3C2CF5008CF2DD /* Products */,
 			);
@@ -132,6 +140,8 @@
 				2A76D6741B3C2CF5008CF2DD /* DetailViewController.m */,
 				2AE459D11B3D81EE0040678E /* BKStackOverflowManager.h */,
 				2AE459D21B3D81EE0040678E /* BKStackOverflowManager.m */,
+				2AE45A161B3D98990040678E /* BKStackOverflowCommunicator.h */,
+				2AE45A171B3D98990040678E /* BKStackOverflowCommunicator.m */,
 				2A76D6A41B3C32A0008CF2DD /* BKTopic.h */,
 				2A76D6A51B3C32A0008CF2DD /* BKTopic.m */,
 				2A76D6A71B3C3BE2008CF2DD /* BKQuestion.h */,
@@ -178,6 +188,8 @@
 			children = (
 				2AE459DA1B3D85970040678E /* BKMockStackOverflowManagerDelegate.h */,
 				2AE459DB1B3D85970040678E /* BKMockStackOverflowManagerDelegate.m */,
+				2AE45A191B3D98D70040678E /* BKMockStackOverflowCommunicator.h */,
+				2AE45A1A1B3D98D70040678E /* BKMockStackOverflowCommunicator.m */,
 			);
 			name = Mocks;
 			sourceTree = "<group>";
@@ -314,7 +326,9 @@
 				2A76D6CA1B3C4726008CF2DD /* BKPerson.m in Sources */,
 				2AE459DC1B3D85970040678E /* BKMockStackOverflowManagerDelegate.m in Sources */,
 				2A76D6721B3C2CF5008CF2DD /* MasterViewController.m in Sources */,
+				2AE45A1B1B3D98D70040678E /* BKMockStackOverflowCommunicator.m in Sources */,
 				2A76D66C1B3C2CF5008CF2DD /* main.m in Sources */,
+				2AE45A181B3D98990040678E /* BKStackOverflowCommunicator.m in Sources */,
 				2AE459D31B3D81EE0040678E /* BKStackOverflowManager.m in Sources */,
 				2A76D6A91B3C3BE2008CF2DD /* BKQuestion.m in Sources */,
 				2A76D6751B3C2CF5008CF2DD /* DetailViewController.m in Sources */,
@@ -481,13 +495,29 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/usr/include",
+				);
 				INFOPLIST_FILE = TestsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/usr/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tests.app/Tests";
 			};
@@ -500,9 +530,25 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/usr/include",
 				);
 				INFOPLIST_FILE = TestsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/usr/lib",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tests.app/Tests";
 			};

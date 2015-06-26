@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "OCMock.h"
 #import "BKStackOverflowManager.h"
 #import "BKMockStackOverflowManagerDelegate.h"
 
@@ -41,4 +42,10 @@
 - (void)testManagerNilAsDelegate {
     XCTAssertNoThrow(manager.delegate = nil, @"it should be accpteble to use nil as an object delegate");
 }
+
+- (void)testAskingForQuestionsMeansRequestingData {
+    
+    
+}
+
 @end
