@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "OCMock.h"
 #import "BKStackOverflowManager.h"
 #import "BKMockStackOverflowManagerDelegate.h"
 
