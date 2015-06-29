@@ -8,6 +8,19 @@
 
 #import "BKStackOverflowCommunicator.h"
 
+@interface BKStackOverflowCommunicator ()
+
+@property (assign, nonatomic) BOOL wasAskedToFetchQuestions;
+
+@end
+
 @implementation BKStackOverflowCommunicator
 
+-(void) searchForQuestionWithTag:(NSString*) tag {
+    self.wasAskedToFetchQuestions = YES;
+}
+
+-(BOOL) wasAskedToFetchQuestions {
+    return self.wasAskedToFetchQuestions;
+}
 @end

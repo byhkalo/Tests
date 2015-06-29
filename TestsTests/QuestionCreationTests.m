@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
+#import <OCMock/OCMockObject.h>
 #import "BKStackOverflowManager.h"
-#import "BKMockStackOverflowManagerDelegate.h"
+#import "BKStackOverflowCommunicator.h"
+#import "BKTopic.h"
 
 @interface QuestionCreationTests : XCTestCase {
     BKStackOverflowManager* manager;
@@ -34,8 +37,8 @@
 }
 
 - (void)testConformingObjectCanBeDelegate {
-    id <BKStackOverflowManagerDelegate> delegate = [[BKMockStackOverflowManagerDelegate alloc]init];
-    XCTAssertNoThrow(manager.delegate = delegate, @"Object can be used as delegate");
+    //id <BKStackOverflowManagerDelegate> delegate = [[BKMockStackOverflowManagerDelegate alloc]init];
+    XCTAssertNoThrow(manager.delegate = OCMProtocolMock(@protocol(BKStackOverflowManagerDelegate)), @"Object can be used as delegate");
 }
 
 - (void)testManagerNilAsDelegate {
@@ -43,8 +46,12 @@
 }
 
 - (void)testAskingForQuestionsMeansRequestingData {
-    
-    
+    id communicator = OCMPartialMock([[BKStackOverflowCommunicator alloc] init]);
+    //communicator = [OCMockObject mockForClass:[BKStackOverflowCommunicator class]];
+    manager.communicator = communicator;
+    BKTopic* topic = [[BKTopic alloc ] initWithName:@"iPhone" tag:@"iphone"];
+    [manager fetchQuestionsOnTopic: topic];
+    XCTAssertTrue([communicator wasAskedToFetchQuestions], @"The communicator should need to fetch data");
 }
 
 @end

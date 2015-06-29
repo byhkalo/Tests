@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042C9D061B4166CF00461B55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE45A1C1B3D9B540040678E /* Foundation.framework */; };
+		042C9D511B41965400461B55 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 042C9D501B41965400461B55 /* libOCMock.a */; };
+		042C9D521B41F0D800461B55 /* BKMockStackOverflowManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE459DB1B3D85970040678E /* BKMockStackOverflowManagerDelegate.m */; };
+		042C9D531B41F0DC00461B55 /* BKMockStackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A1A1B3D98D70040678E /* BKMockStackOverflowCommunicator.m */; };
+		042C9D541B41F2A600461B55 /* BKStackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A171B3D98990040678E /* BKStackOverflowCommunicator.m */; };
 		2A76D66C1B3C2CF5008CF2DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A76D66B1B3C2CF5008CF2DD /* main.m */; };
 		2A76D66F1B3C2CF5008CF2DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A76D66E1B3C2CF5008CF2DD /* AppDelegate.m */; };
 		2A76D6721B3C2CF5008CF2DD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A76D6711B3C2CF5008CF2DD /* MasterViewController.m */; };
@@ -19,7 +24,6 @@
 		2A76D6CA1B3C4726008CF2DD /* BKPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A76D6C91B3C4726008CF2DD /* BKPerson.m */; };
 		2AE459C01B3D5C480040678E /* BKAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE459BF1B3D5C480040678E /* BKAnswer.m */; };
 		2AE459D31B3D81EE0040678E /* BKStackOverflowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE459D21B3D81EE0040678E /* BKStackOverflowManager.m */; };
-		2AE459DC1B3D85970040678E /* BKMockStackOverflowManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE459DB1B3D85970040678E /* BKMockStackOverflowManagerDelegate.m */; };
 		2AE45A101B3D8FCD0040678E /* AnswerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A0A1B3D8FCD0040678E /* AnswerTests.m */; };
 		2AE45A111B3D8FCD0040678E /* PersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A0B1B3D8FCD0040678E /* PersonTests.m */; };
 		2AE45A121B3D8FCD0040678E /* QuestionCreationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A0C1B3D8FCD0040678E /* QuestionCreationTests.m */; };
@@ -27,7 +31,6 @@
 		2AE45A141B3D8FCD0040678E /* TestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A0E1B3D8FCD0040678E /* TestsTests.m */; };
 		2AE45A151B3D8FCD0040678E /* TopicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A0F1B3D8FCD0040678E /* TopicTest.m */; };
 		2AE45A181B3D98990040678E /* BKStackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A171B3D98990040678E /* BKStackOverflowCommunicator.m */; };
-		2AE45A1B1B3D98D70040678E /* BKMockStackOverflowCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE45A1A1B3D98D70040678E /* BKMockStackOverflowCommunicator.m */; };
 		2AE45A1D1B3D9B540040678E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE45A1C1B3D9B540040678E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042C9D4E1B41955500461B55 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = usr/includes/lib/libOCMock.a; sourceTree = "<group>"; };
+		042C9D501B41965400461B55 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = usr/lib/libOCMock.a; sourceTree = "<group>"; };
 		2A76D6661B3C2CF5008CF2DD /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A76D66A1B3C2CF5008CF2DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A76D66B1B3C2CF5008CF2DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,16 +73,6 @@
 		2AE459D51B3D82C70040678E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AE459DA1B3D85970040678E /* BKMockStackOverflowManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMockStackOverflowManagerDelegate.h; sourceTree = "<group>"; };
 		2AE459DB1B3D85970040678E /* BKMockStackOverflowManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKMockStackOverflowManagerDelegate.m; sourceTree = "<group>"; };
-		2AE459DE1B3D8CBA0040678E /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
-		2AE459E01B3D8CBA0040678E /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
-		2AE459E11B3D8CBA0040678E /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
-		2AE459E21B3D8CBA0040678E /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
-		2AE459E31B3D8CBA0040678E /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
-		2AE459E41B3D8CBA0040678E /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
-		2AE459E51B3D8CBA0040678E /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
-		2AE459E61B3D8CBA0040678E /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
-		2AE459E71B3D8CBA0040678E /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
-		2AE459E81B3D8CBA0040678E /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
 		2AE45A0A1B3D8FCD0040678E /* AnswerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerTests.m; sourceTree = "<group>"; };
 		2AE45A0B1B3D8FCD0040678E /* PersonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTests.m; sourceTree = "<group>"; };
 		2AE45A0C1B3D8FCD0040678E /* QuestionCreationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionCreationTests.m; sourceTree = "<group>"; };
@@ -104,16 +99,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042C9D511B41965400461B55 /* libOCMock.a in Frameworks */,
+				042C9D061B4166CF00461B55 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042C9D4D1B4194E300461B55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				042C9D501B41965400461B55 /* libOCMock.a */,
+				042C9D4E1B41955500461B55 /* libOCMock.a */,
+				2AE45A1C1B3D9B540040678E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2A76D65D1B3C2CF5008CF2DD = {
 			isa = PBXGroup;
 			children = (
-				2AE45A1C1B3D9B540040678E /* Foundation.framework */,
+				042C9D4D1B4194E300461B55 /* Frameworks */,
 				2A76D6681B3C2CF5008CF2DD /* Tests */,
 				2A76D6671B3C2CF5008CF2DD /* Products */,
 			);
@@ -131,7 +138,6 @@
 		2A76D6681B3C2CF5008CF2DD /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2AE459DD1B3D8CBA0040678E /* Library */,
 				2A76D66D1B3C2CF5008CF2DD /* AppDelegate.h */,
 				2A76D66E1B3C2CF5008CF2DD /* AppDelegate.m */,
 				2A76D6701B3C2CF5008CF2DD /* MasterViewController.h */,
@@ -192,32 +198,6 @@
 				2AE45A1A1B3D98D70040678E /* BKMockStackOverflowCommunicator.m */,
 			);
 			name = Mocks;
-			sourceTree = "<group>";
-		};
-		2AE459DD1B3D8CBA0040678E /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				2AE459DE1B3D8CBA0040678E /* libOCMock.a */,
-				2AE459DF1B3D8CBA0040678E /* OCMock */,
-			);
-			name = Library;
-			path = ../../Library/OCMock/Library;
-			sourceTree = "<group>";
-		};
-		2AE459DF1B3D8CBA0040678E /* OCMock */ = {
-			isa = PBXGroup;
-			children = (
-				2AE459E01B3D8CBA0040678E /* NSNotificationCenter+OCMAdditions.h */,
-				2AE459E11B3D8CBA0040678E /* OCMArg.h */,
-				2AE459E21B3D8CBA0040678E /* OCMConstraint.h */,
-				2AE459E31B3D8CBA0040678E /* OCMLocation.h */,
-				2AE459E41B3D8CBA0040678E /* OCMMacroState.h */,
-				2AE459E51B3D8CBA0040678E /* OCMock.h */,
-				2AE459E61B3D8CBA0040678E /* OCMockObject.h */,
-				2AE459E71B3D8CBA0040678E /* OCMRecorder.h */,
-				2AE459E81B3D8CBA0040678E /* OCMStubRecorder.h */,
-			);
-			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,9 +304,7 @@
 				2A76D6A61B3C32A0008CF2DD /* BKTopic.m in Sources */,
 				2AE459C01B3D5C480040678E /* BKAnswer.m in Sources */,
 				2A76D6CA1B3C4726008CF2DD /* BKPerson.m in Sources */,
-				2AE459DC1B3D85970040678E /* BKMockStackOverflowManagerDelegate.m in Sources */,
 				2A76D6721B3C2CF5008CF2DD /* MasterViewController.m in Sources */,
-				2AE45A1B1B3D98D70040678E /* BKMockStackOverflowCommunicator.m in Sources */,
 				2A76D66C1B3C2CF5008CF2DD /* main.m in Sources */,
 				2AE45A181B3D98990040678E /* BKStackOverflowCommunicator.m in Sources */,
 				2AE459D31B3D81EE0040678E /* BKStackOverflowManager.m in Sources */,
@@ -341,8 +319,11 @@
 			files = (
 				2AE45A121B3D8FCD0040678E /* QuestionCreationTests.m in Sources */,
 				2AE45A151B3D8FCD0040678E /* TopicTest.m in Sources */,
+				042C9D531B41F0DC00461B55 /* BKMockStackOverflowCommunicator.m in Sources */,
 				2AE45A141B3D8FCD0040678E /* TestsTests.m in Sources */,
 				2AE45A131B3D8FCD0040678E /* QuestionTests.m in Sources */,
+				042C9D541B41F2A600461B55 /* BKStackOverflowCommunicator.m in Sources */,
+				042C9D521B41F0D800461B55 /* BKMockStackOverflowManagerDelegate.m in Sources */,
 				2AE45A111B3D8FCD0040678E /* PersonTests.m in Sources */,
 				2AE45A101B3D8FCD0040678E /* AnswerTests.m in Sources */,
 			);
@@ -464,11 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/kb/Documents/Projects/Library/OCMock/iOS,
-					/Users/kb/Documents/Projects/Library/OCMock/Library,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -479,11 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/kb/Documents/Projects/Library/OCMock/iOS,
-					/Users/kb/Documents/Projects/Library/OCMock/Library,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -495,7 +468,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -530,7 +502,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

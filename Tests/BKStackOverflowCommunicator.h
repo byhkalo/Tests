@@ -10,4 +10,7 @@
 
 @interface BKStackOverflowCommunicator : NSObject
 
+-(BOOL) wasAskedToFetchQuestions;
+-(void) searchForQuestionWithTag:(NSString*) tag;
+
 @end

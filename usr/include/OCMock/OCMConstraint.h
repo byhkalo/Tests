@@ -19,15 +19,15 @@
 
 @interface OCMConstraint : NSObject 
 
-+ (instancetype)constraint;
++ (id)constraint;
 - (BOOL)evaluate:(id)value;
 
 // if you are looking for any, isNil, etc, they have moved to OCMArg
 
 // try to use [OCMArg checkWith...] instead of the constraintWith... methods below
 
-+ (instancetype)constraintWithSelector:(SEL)aSelector onObject:(id)anObject;
-+ (instancetype)constraintWithSelector:(SEL)aSelector onObject:(id)anObject withValue:(id)aValue;
++ (id)constraintWithSelector:(SEL)aSelector onObject:(id)anObject;
++ (id)constraintWithSelector:(SEL)aSelector onObject:(id)anObject withValue:(id)aValue;
 
 
 @end
@@ -62,7 +62,7 @@
 	BOOL (^block)(id);
 }
 
-- (instancetype)initWithConstraintBlock:(BOOL (^)(id))block;
+- (id)initWithConstraintBlock:(BOOL (^)(id))block;
 
 @end
 

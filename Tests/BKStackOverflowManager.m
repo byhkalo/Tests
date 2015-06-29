@@ -17,4 +17,8 @@
     _delegate = newDelegate;
 }
 
+-(void) fetchQuestionsOnTopic:(BKTopic*) topic {
+    [self.communicator searchForQuestionWithTag:[topic tag]];
+}
+
 @end

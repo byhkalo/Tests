@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BKStackOverflowCommunicator.h"
+#import "BKTopic.h"
 @protocol BKStackOverflowManagerDelegate;
 
 @interface BKStackOverflowManager : NSObject
 
 @property (weak, nonatomic) id <BKStackOverflowManagerDelegate> delegate;
+@property (strong, nonatomic) BKStackOverflowCommunicator* communicator;
+
+-(void) fetchQuestionsOnTopic:(BKTopic*) topic;
 
 @end
 

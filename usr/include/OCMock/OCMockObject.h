@@ -42,7 +42,7 @@
 
 + (id)observerMock;
 
-- (instancetype)init;
+- (id)init;
 
 - (void)setExpectationOrderMatters:(BOOL)flag;
 
