@@ -46,12 +46,16 @@
 }
 
 - (void)testAskingForQuestionsMeansRequestingData {
-    id communicator = OCMPartialMock([[BKStackOverflowCommunicator alloc] init]);
-    //communicator = [OCMockObject mockForClass:[BKStackOverflowCommunicator class]];
-    manager.communicator = communicator;
-    BKTopic* topic = [[BKTopic alloc ] initWithName:@"iPhone" tag:@"iphone"];
+    //id communicator = OCMPartialMock([[BKStackOverflowCommunicator alloc] init]);
+    //id communicator = [OCMockObject mockForClass:[BKStackOverflowCommunicator class]];
+    //id communicator = OCMClassMock([BKStackOverflowCommunicator class]);
+    id comunicator = [OCMockObject mockForClass:[BKStackOverflowCommunicator class]];
+    [[[comunicator expect] andReturn:@YES] wasAskedToFetchQuestions];
+    manager.communicator = comunicator;
+    BKTopic* topic = [[BKTopic alloc] initWithName:@"iPhone" tag:@"iphone"];
     [manager fetchQuestionsOnTopic: topic];
-    XCTAssertTrue([communicator wasAskedToFetchQuestions], @"The communicator should need to fetch data");
+    XCTAssertTrue([comunicator wasAskedToFetchQuestions], @"The communicator should need to fetch data");
+    [comunicator verify];
 }
 
 @end
